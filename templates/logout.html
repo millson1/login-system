@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logged Out</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+    <script>
+        // Redirect to login page after 5 seconds
+        setTimeout(function() {
+            window.location.href = "/";
+        }, 5000);
+    </script>
+</head>
+<body>
+    <div class="main">
+        <h1>You have been logged out.</h1>
+        <p>Redirecting you back to the login page...</p>
+    </div>
+</body>
+</html>

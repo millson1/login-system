@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PieMail Login</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+    </head>
+    <body>
+        <div class="main">
+            <h1>piemail web interface</h1>
+        </div>
+        <form action="/" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="$ username _" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="$ password _" required>
+
+            <button type="submit">Log In</button>
+        </form>
+
+        <!-- Conditionally show error message only if login fails -->
+        {% if error_message %}
+            <div class="error-message">
+                {{ error_message }}
+            </div>
+        {% endif %}
+
+        <div class="register-link">
+            <p>Don't have an account? <a href="{{ url_for('register') }}">Register here</a></p>
+        </div>
+    </body>
+</html>
