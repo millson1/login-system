@@ -62,7 +62,7 @@ pip install Flask
 ## Limitations ⚠️
 
 - This project is designed for educational purposes and is **not secure** for production use.
-- User data is not safely stored or encrypted; do not use sensitive information.
+- User data is not safely stored, but it is encrypted; still, do not use sensitive information.
 
 ## Contributing 🤝
 
