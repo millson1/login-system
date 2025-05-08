@@ -42,8 +42,8 @@ pip install Flask
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/millson1/supreme-system.git
-   cd supreme-system
+   git clone https://github.com/millson1/login-system
+   cd login-system
    ```
 
 2. Run the application:
@@ -70,7 +70,7 @@ If you’d like to contribute to this project, feel free to open an issue or sub
 
 ## License 📄
 
-This project is open-source and available under the MIT License. See the [LICENSE](LICENSE) file for more information.
+Do whatever you want with it.
 
 ## Acknowledgments 🙌
 
